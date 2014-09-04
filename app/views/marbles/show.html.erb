@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @marble.user_id %>
+</p>
+
+<p>
+  <strong>Marble name:</strong>
+  <%= @marble.marble_name %>
+</p>
+
+<p>
+  <strong>Marble text:</strong>
+  <%= @marble.marble_text %>
+</p>
+
+<%= link_to 'Edit', edit_marble_path(@marble) %> |
+<%= link_to 'Back', marbles_path %>
