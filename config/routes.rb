@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
-  resources :comments
-
-  resources :marbles
+  root 'welcome#index'
 
   get 'welcome/index'
 
+
+
+  resources :comments
+  resources :marbles
   devise_for :users
   devise_for :models
 
