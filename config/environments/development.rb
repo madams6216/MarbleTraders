@@ -39,8 +39,8 @@ Rails.application.configure do
   :storage => :s3,
   :s3_credentials => {
     :bucket => 'marbletrader',   #add the appropriate data to green parts
-    :access_key_id => '',
-    :secret_access_key => ''
+    :access_key_id => 'AKIAIKVN6JU76DNXPMDQ',
+    :secret_access_key => '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'
   }
 }
 end
