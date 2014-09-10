@@ -25,7 +25,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     	<ul class="nav navbar-nav">
       	<li><a href="/users/edit">Edit Account</a></li>
-      	<li><a href="/marbles">Trading Floor</a></li>  
+      	<li><a href="/marbles">Trading Floor</a></li> 
+        <li style='text-align:right'><%= link_to "Sign out",destroy_user_session_path, method: :delete, class: "button" %></li>  
     	</ul>
     </div>
   	</div>

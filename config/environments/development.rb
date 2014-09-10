@@ -38,9 +38,9 @@ Rails.application.configure do
   config.paperclip_defaults = {
   :storage => :s3,
   :s3_credentials => {
-    :bucket => 'S3_BUCKET_NAME',   #add the appropriate data to green parts
-    :access_key_id => 'AWS_ACCESS_KEY_ID',
-    :secret_access_key => 'AWS_SECRET_ACCESS_KEY'
+    :bucket => 'marbletrader',   #add the appropriate data to green parts
+    :access_key_id => 'AKIAJWCZCCD6JQQWROTA',
+    :secret_access_key => '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'
   }
 }
 end

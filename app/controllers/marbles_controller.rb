@@ -69,6 +69,6 @@ class MarblesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def marble_params
-      params.require(:marble).permit(:user_id, :marble_name, :marble_text)
+      params.require(:marble).permit(:user_id, :marble_name, :marble_text, :name, :avatar)
     end
 end
