@@ -41,6 +41,7 @@ Rails.application.configure do
     :bucket => 'marbletrader',   #add the appropriate data to green parts
     :access_key_id => 'AKIAIKVN6JU76DNXPMDQ',
     :secret_access_key => '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'
+    s3_host_name: 's3-us-west-2.amazonaws.com'
   }
 }
 end
