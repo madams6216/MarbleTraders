@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get 'welcome/index'
 
+  get 'users/sign_out'
+
   resources :comments
   resources :marbles
   devise_for :users
