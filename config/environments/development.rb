@@ -34,4 +34,13 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  config.paperclip_defaults = {
+  :storage => :s3,
+  :s3_credentials => {
+    :bucket => 'marbletrader',   #add the appropriate data to green parts
+    :access_key_id => 'AKIAIKVN6JU76DNXPMDQ',
+    :secret_access_key => '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'
+  }
+}
 end
