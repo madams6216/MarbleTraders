@@ -1,9 +1,5 @@
 <h1>Marble Trading Floor</h1>
 
-<section id="marbles">
-  <%= render @marbles %>
-</section>
-
 <table class='table'>
   <thead>
     <tr>
@@ -24,6 +20,7 @@
         <td><%= link_to 'Show', marble %></td>
         <td><%= link_to 'Edit', edit_marble_path(marble) %></td>
         <td><%= link_to 'Destroy', marble, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        
       </tr>
     <% end %>
   </tbody>

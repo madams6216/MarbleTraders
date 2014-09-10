@@ -13,11 +13,11 @@
 
   <div class="field">
     <%= f.label :user_id %><br>
-    <%= f.number_field :user_id %>
+    <%= f.collection_select :user_id, User.order(:user_name), :id, :user_name %>
   </div>
   <div class="field">
     <%= f.label :marble_id %><br>
-    <%= f.number_field :marble_id %>
+    <%= f.collection_select :marble_id, Marble.order(:marble_name), :id, :marble_name %>
   </div>
   <div class="field">
     <%= f.label :comment_text %><br>
