@@ -1,6 +1,6 @@
 class Marble < ActiveRecord::Base
 	belongs_to :user
-  belongs_to :comments
+  has_many :comments
 
   validates :user_id, presence: true
 
