@@ -25,7 +25,7 @@ class MarblesController < ApplicationController
   # POST /marbles.json
   def create
     @marble = Marble.new(marble_params)
-    @marble.marble_id = current_user.id
+    #@marble.marble_id = current_user.id
 
     respond_to do |format|
       if @marble.save
